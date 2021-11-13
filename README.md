@@ -1,37 +1,32 @@
 
-# Python Project Template
+# DALiuGE Component Project Template
 
-A low dependency and really simple to start project template for Python Projects.
+NOTE: This template is based on the excellent work of Bruno Rocha (https://github.com/rochacbruno/python-project-template).
 
-See also 
-- [Flask-Project-Template](https://github.com/rochacbruno/flask-project-template/) for a full feature Flask project including database, API, admin interface, etc.
-- [FastAPI-Project-Template](https://github.com/rochacbruno/fastapi-project-template/) The base to start an openapi project featuring: SQLModel, Typer, FastAPI, JWT Token Auth, Interactive Shell, Management Commands.
+This project template is the starting point for people who want to develop Python based **components** for the **[DALiuGE](https://daliuge.reqdthedocs.io)** workflow development and execution framework. It contains everything to get you started, including project setup, dependency installation and the actual installation procedure into the DALiuGE environment.
 
 ### HOW TO USE THIS TEMPLATE
 
-> **DO NOT FORK** this is meant to be used from **[Use this template](https://github.com/rochacbruno/python-project-template/generate)** feature.
+> **DO NOT FORK** this is meant to be used from **[Use this template](https://github.com/ICRAR/daliuge-component-template/generate)** feature.
 
-1. Click on **[Use this template](https://github.com/rochacbruno/python-project-template/generate)**
-3. Give a name to your project  
-   (e.g. `my_awesome_project` recommendation is to use all lowercase and underscores separation for repo names.)
-3. Wait until the first run of CI finishes  
+1. Click on **[Use this template](https://github.com/ICRAR/daliuge-component-template/generate)**
+3. Give a name to your new DALiuGE component  
+   (e.g. `my_awesome_component`, recommendation is to use all lowercase and underscores separation for repo names.)
+3. **Wait until the first run of CI finishes(!)**
    (Github Actions will process the template and commit to your new repo)
 4. If you want [codecov](https://about.codecov.io/sign-up/) Reports and Automatic Release to [PyPI](https://pypi.org)  
   On the new repository `settings->secrets` add your `PIPY_API_TOKEN` and `CODECOV_TOKEN` (get the tokens on respective websites)
-4. Read the file [CONTRIBUTING.md](CONTRIBUTING.md)
 5. Then clone your new project and happy coding!
 
-> **NOTE**: **WAIT** until first CI run on github actions before cloning your new project.
+> **AGAIN**: **WAIT** until first CI run on github actions **before** cloning your new project.
 
-### What is included on this template?
+### What is included in this template?
 
-- 🖼️ Templates for starting multiple application types:
-  * **Basic low dependency** Python program (default) [use this template](https://github.com/rochacbruno/python-project-template/generate)
-  * **Flask** with database, admin interface, restapi and authentication [use this template](https://github.com/rochacbruno/flask-project-template/generate).
+- 🖼️ **Basic** Python component [use this template](https://github.com/ICRAR/daliuge-component-template/generate)
   **or Run `make init` after cloning to generate a new project based on a template.**
-- 📦 A basic [setup.py](setup.py) file to provide installation, packaging and distribution for your project.  
+- 📦 A basic [setup.py](setup.py) file to provide installation, packaging and distribution for your component.  
   Template uses setuptools because it's the de-facto standard for Python packages, you can run `make switch-to-poetry` later if you want.
-- 🤖 A [Makefile](Makefile) with the most useful commands to install, test, lint, format and release your project.
+- 🤖 A [Makefile](Makefile) with the most useful commands to install, test, lint, format and release your component.
 - 📃 Documentation structure using [mkdocs](http://www.mkdocs.org)
 - 💬 Auto generation of change log using **gitchangelog** to keep a HISTORY.md file automatically based on your commit history on every release.
 - 🐋 A simple [Containerfile](Containerfile) to build a container image for your project.  
@@ -46,12 +41,10 @@ See also
 > Curious about architectural decisions on this template? read [ABOUT_THIS_TEMPLATE.md](ABOUT_THIS_TEMPLATE.md)  
 > If you want to contribute to this template please open an [issue](https://github.com/rochacbruno/python-project-template/issues) or fork and send a PULL REQUEST.
 
-[❤️ Sponsor this project](https://github.com/sponsors/rochacbruno/)
-
 <!--  DELETE THE LINES ABOVE THIS AND WRITE YOUR PROJECT README BELOW -->
 
 ---
-# project_name
+# my_awesome_component
 
 [![codecov](https://codecov.io/gh/author_name/project_urlname/branch/main/graph/badge.svg?token=project_urlname_token_here)](https://codecov.io/gh/author_name/project_urlname)
 [![CI](https://github.com/author_name/project_urlname/actions/workflows/main.yml/badge.svg)](https://github.com/author_name/project_urlname/actions/workflows/main.yml)
@@ -61,17 +54,15 @@ project_description
 ## Install it from PyPI
 
 ```bash
-pip install project_name
+pip install my_component
 ```
 
 ## Usage
 
 ```py
-from project_name import BaseClass
-from project_name import base_function
+from my_component import BaseClass
 
-BaseClass().base_method()
-base_function()
+ComponentClass().component_method()
 ```
 
 ```bash
@@ -79,7 +70,3 @@ $ python -m project_name
 #or
 $ project_name
 ```
-
-## Development
-
-Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.

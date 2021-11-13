@@ -1,6 +1,7 @@
+# __main__ is not required for DALiuGE components.
 import argparse  # pragma: no cover
 
-from . import BaseClass, base_function  # pragma: no cover
+from . import MyApp  # pragma: no cover
 
 
 def main() -> None:  # pragma: no cover
@@ -51,9 +52,8 @@ def main() -> None:  # pragma: no cover
         print("Verbose mode is on.")
 
     print("Executing main function")
-    base = BaseClass()
-    print(base.base_method())
-    print(base_function())
+    comp = MyApp()
+    print(comp.run())
     print("End of main function")
 
 
