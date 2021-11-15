@@ -1,9 +1,9 @@
 
-# DALiuGE Component Project Template
-
-NOTE: This template is based on the excellent work of Bruno Rocha (https://github.com/rochacbruno/python-project-template).
+# DALiuGE Components Project Template
 
 This project template is the starting point for people who want to develop Python based **components** for the **[DALiuGE](https://daliuge.reqdthedocs.io)** workflow development and execution framework. It contains everything to get you started, including project setup, dependency installation and the actual installation procedure into the DALiuGE environment.
+
+**NOTE: This template is based on the excellent work of Bruno Rocha (https://github.com/rochacbruno/python-project-template).**
 
 ### HOW TO USE THIS TEMPLATE
 
