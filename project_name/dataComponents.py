@@ -9,14 +9,22 @@ then result in a single EAGLE palette.
 
 Be creative! do whatever you need to do!
 """
-from dlg.drop import AbstractDROP
-from dlg.meta import dlg_float_param, dlg_string_param
-from dlg.meta import dlg_bool_param, dlg_int_param
-from dlg.meta import dlg_component, dlg_batch_input
-from dlg.meta import dlg_batch_output, dlg_streaming_input
-
-import pickle, base64, os
+import base64
 import logging
+import os
+import pickle
+
+from dlg.drop import AbstractDROP
+from dlg.meta import (
+    dlg_batch_input,
+    dlg_batch_output,
+    dlg_bool_param,
+    dlg_component,
+    dlg_float_param,
+    dlg_int_param,
+    dlg_streaming_input,
+    dlg_string_param,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -26,7 +34,7 @@ logger = logging.getLogger(__name__)
 # Replace the documentation with whatever you want/need to show in the DALiuGE
 # workflow editor. The dataclass parameter should contain the relative Pythonpath
 # to import MyApp.
-#     
+#
 # @par EAGLE_START
 # @param category DataDrop
 # @param[in] param/appclass Drop Class/project_name.MyData/String/readonly/
@@ -41,6 +49,7 @@ logger = logging.getLogger(__name__)
 
 # Data components usually directly inhert from the AbstractDROP class. Please
 # refer to the Developer Guide for more information.
+
 
 class MyDataDROP(AbstractDROP):
     """

@@ -9,14 +9,20 @@ then result in a single EAGLE palette.
 
 Be creative! do whatever you need to do!
 """
-from dlg.drop import BarrierAppDROP, BranchAppDrop
-from dlg.meta import dlg_float_param, dlg_string_param
-from dlg.meta import dlg_bool_param, dlg_int_param
-from dlg.meta import dlg_component, dlg_batch_input
-from dlg.meta import dlg_batch_output, dlg_streaming_input
-
-import pickle
 import logging
+import pickle
+
+from dlg.drop import BarrierAppDROP, BranchAppDrop
+from dlg.meta import (
+    dlg_batch_input,
+    dlg_batch_output,
+    dlg_bool_param,
+    dlg_component,
+    dlg_float_param,
+    dlg_int_param,
+    dlg_streaming_input,
+    dlg_string_param,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -26,7 +32,7 @@ logger = logging.getLogger(__name__)
 # Replace the documentation with whatever you want/need to show in the DALiuGE
 # workflow editor. The appclass parameter should contain the relative Pythonpath
 # to import MyApp.
-#     
+#
 # @par EAGLE_START
 # @param category PythonApp
 # @param[in] param/appclass Application Class/project_name.MyApp/String/readonly/
@@ -43,17 +49,22 @@ logger = logging.getLogger(__name__)
 # It is also possible to inherit directly from the AbstractDROP class. Please
 # refer to the Developer Guide for more information.
 
+
 class MyAppDROP(BarrierAppDROP):
     """A template BarrierAppDrop that doesn't do anything at all
     Add your functionality in the run method and optional additional
     methods.
     """
-    compontent_meta = dlg_component('MyApp', 'My Application',
-                                    [dlg_batch_input('binary/*', [])],
-                                    [dlg_batch_output('binary/*', [])],
-                                    [dlg_streaming_input('binary/*')])
 
-    sleepTime = dlg_float_param('sleep time', 0)
+    compontent_meta = dlg_component(
+        "MyApp",
+        "My Application",
+        [dlg_batch_input("binary/*", [])],
+        [dlg_batch_output("binary/*", [])],
+        [dlg_streaming_input("binary/*")],
+    )
+
+    sleepTime = dlg_float_param("sleep time", 0)
 
     def initialize(self, **kwargs):
         super(MyAppDROP, self).initialize(**kwargs)
