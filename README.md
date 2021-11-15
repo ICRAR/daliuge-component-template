@@ -42,8 +42,6 @@ This project template is the starting point for people who want to develop Pytho
 > If you want to contribute to this template please open an [issue](https://github.com/ICRAR/daliuge-component-template/issues) or fork and send a PULL REQUEST.
 
 <!--  DELETE THE LINES ABOVE THIS AND WRITE YOUR PROJECT README BELOW -->
-
----
 # my_awesome_component
 
 [![codecov](https://codecov.io/gh/author_name/project_urlname/branch/main/graph/badge.svg?token=project_urlname_token_here)](https://codecov.io/gh/author_name/project_urlname)

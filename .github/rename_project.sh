@@ -32,5 +32,11 @@ done
 
 mv project_name $name
 
+# remove the template related documents
+rm ABOUT_THIS_TEMPLATE.md
+rm CONTRIBUTING.md
+rm HISTORY.md && touch HISTORY.md
+# remove template stuff from README
+sed -ibak '1,/^<!--  DELETE THE LINES ABOVE THIS AND WRITE YOUR PROJECT README BELOW -->$/d' README.md
 # This command runs only once on GHA!
 rm -rf .github/template.yml
