@@ -7,11 +7,11 @@ This project template is the starting point for people who want to develop Pytho
 
 ### HOW TO USE THIS TEMPLATE
 
-> **DO NOT FORK** this is meant to be used from **[Use this template](https://github.com/ICRAR/daliuge-component-template/generate)** feature.
+> **DO NOT FORK** this is meant to be used from **[Use this template](https://github.com/ICRAR/daliuge-component-template/generate)** feature, which also appears instead of the usual 'Code' button on the top-right of the repository page.
 
 1. Click on **[Use this template](https://github.com/ICRAR/daliuge-component-template/generate)**
-3. Give a name to your new DALiuGE component  
-   (e.g. `my_awesome_component`, recommendation is to use all lowercase and underscores separation for repo names.)
+3. Give a name to your new DALiuGE components  
+   (e.g. `my_awesome_components`, recommendation is to use all lowercase and underscores separation for repo names.)
 3. **Wait until the first run of CI finishes(!)**
    (Github Actions will process the template and commit to your new repo)
 4. If you want [codecov](https://about.codecov.io/sign-up/) Reports and Automatic Release to [PyPI](https://pypi.org)  
@@ -22,11 +22,11 @@ This project template is the starting point for people who want to develop Pytho
 
 ### What is included in this template?
 
-- 🖼️ **Basic** Python component [use this template](https://github.com/ICRAR/daliuge-component-template/generate)
+- 🖼️ **Basic** Python components [use this template](https://github.com/ICRAR/daliuge-component-template/generate)
   **or Run `make init` after cloning to generate a new project based on a template.**
 - 📦 A basic [setup.py](setup.py) file to provide installation, packaging and distribution for your component.  
   Template uses setuptools because it's the de-facto standard for Python packages, you can run `make switch-to-poetry` later if you want.
-- 🤖 A [Makefile](Makefile) with the most useful commands to install, test, lint, format and release your component.
+- 🤖 A [Makefile](Makefile) with the most useful commands to install, test, lint, format and release your component. (Try `make help`)
 - 📃 Documentation structure using [mkdocs](http://www.mkdocs.org)
 - 💬 Auto generation of change log using **gitchangelog** to keep a HISTORY.md file automatically based on your commit history on every release.
 - 🐋 A simple [Containerfile](Containerfile) to build a container image for your project.  
