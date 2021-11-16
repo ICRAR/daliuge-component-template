@@ -18,7 +18,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.9]
+        python-version: [3.8]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -36,7 +36,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.9]
+        python-version: [3.8]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -52,13 +52,23 @@ jobs:
         uses: codecov/codecov-action@v1
         # with:
         #   fail_ci_if_error: true
+      - name: Build dist package
+        run: | 
+          python -m pip install --upgrade pip
+          pip install setuptools wheel
+          python setup.py sdist bdist_wheel
+      - name: Publish distribution 📦 to Test PyPI
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          password: ${{ secrets.TEST_PYPI }}
+          repository_url: https://test.pypi.org/legacy/
 
   tests_mac:
     needs: linter
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.9]
+        python-version: [3.8]
         os: [macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
