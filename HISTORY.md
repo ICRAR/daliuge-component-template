@@ -4,6 +4,8 @@ Changelog
 
 (unreleased)
 ------------
+- Makefile adjustments for release. [Andreas Wicenec]
+- Release: version 0.1.1 🚀 [Andreas Wicenec]
 - Commented testpypi upload. [Andreas Wicenec]
 - Added gitchangelog config; adjusted workflows to PyPi actions.
   [Andreas Wicenec]
