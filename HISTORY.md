@@ -2,8 +2,9 @@ Changelog
 =========
 
 
-(unreleased)
-------------
+v0.1.2 (2021-11-16)
+-------------------
+- Release: version v0.1.2 🚀 [Andreas Wicenec]
 - Makefile adjustments for release. [Andreas Wicenec]
 - Release: version 0.1.1 🚀 [Andreas Wicenec]
 - Commented testpypi upload. [Andreas Wicenec]
