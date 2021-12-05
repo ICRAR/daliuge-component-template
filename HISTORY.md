@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+(unreleased)
+------------
+- Better description of installation procedure. [Andreas Wicenec]
+- Updated HISTORY.md. [Andreas Wicenec]
+
+
 v0.1.2 (2021-11-16)
 -------------------
 - Release: version v0.1.2 🚀 [Andreas Wicenec]
