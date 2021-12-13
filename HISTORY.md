@@ -4,6 +4,14 @@ Changelog
 
 (unreleased)
 ------------
+- Aligned init. [Andreas Wicenec]
+- Renamed apps and data to make module path more compact. [Andreas
+  Wicenec]
+
+
+v0.1.3 (2021-12-05)
+-------------------
+- Release: version v0.1.3 🚀 [Andreas Wicenec]
 - Better description of installation procedure. [Andreas Wicenec]
 - Updated HISTORY.md. [Andreas Wicenec]
 
