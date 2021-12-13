@@ -3,7 +3,7 @@ __package__ = "project_name"
 from dlg import droputils, utils
 
 # extend the following as required
-from .appComponents import MyAppDROP
-from .dataComponents import MyDataDROP
+from .apps import MyAppDROP
+from .data import MyDataDROP
 
 __all__ = ["MyAppDROP", "MyDataDROP"]
