@@ -4,6 +4,12 @@ Changelog
 
 (unreleased)
 ------------
+- Updated README and ABOUT docs. [Andreas Wicenec]
+
+
+v0.1.4 (2021-12-13)
+-------------------
+- Release: version v0.1.4 🚀 [Andreas Wicenec]
 - Aligned init. [Andreas Wicenec]
 - Renamed apps and data to make module path more compact. [Andreas
   Wicenec]
