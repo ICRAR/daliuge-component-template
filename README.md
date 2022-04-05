@@ -1,5 +1,5 @@
 
-# DALiuGE Components Project Template
+# DALiuGE Component Project Template
 
 This project template is the starting point for people who want to develop Python based **components** for the **[DALiuGE](https://daliuge.readthedocs.io)** workflow development and execution framework. It contains everything to get you started, including project setup, dependency installation and the actual installation procedure into the DALiuGE environment.
 
