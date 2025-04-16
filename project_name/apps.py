@@ -10,9 +10,8 @@ then result in a single EAGLE palette.
 Be creative! do whatever you need to do!
 """
 import logging
-import pickle
 
-from dlg.drop import BarrierAppDROP, BranchAppDrop
+from dlg.apps.app_base import BarrierAppDROP
 from dlg.meta import (
     dlg_batch_input,
     dlg_batch_output,
@@ -45,7 +44,7 @@ logger = logging.getLogger(__name__)
 #     \~English Dummy output port
 # @par EAGLE_END
 
-# Application components can inherit from BarrierAppDROP or BranchAppDrop.
+# Application components can inherit from BarrierAppDROP.
 # It is also possible to inherit directly from the AbstractDROP class. Please
 # refer to the Developer Guide for more information.
 

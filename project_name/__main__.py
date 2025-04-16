@@ -1,7 +1,7 @@
 # __main__ is not required for DALiuGE components.
 import argparse  # pragma: no cover
 
-from . import MyAppDROP  # pragma: no cover
+from project_name.apps import MyAppDROP  # pragma: no cover
 
 
 def main() -> None:  # pragma: no cover
