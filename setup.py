@@ -37,8 +37,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="author_name",
-    package_dir={"":"project_name"},
-    packages=find_packages(where="project_name",exclude=["tests", ".github"]),
+    packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
         "console_scripts": ["project_name = project_name.__main__:main"]
