@@ -6,6 +6,8 @@ jobs:
   rename-project:
     if: ${{ github.repository	!= 'ICRAR/daliuge-component-template' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
