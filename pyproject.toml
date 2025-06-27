@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project_name"
+version = "0.1.0"
+description = "project_description"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "daliuge-engine>=5.0", 
+    "daliuge-translator>=5.0", 
+    "dlg_paletteGen", 
+    "toml",
+]
+
+[[project.authors]]
+name = "author_name"
+
+[project.urls]
+Homepage = "https://github.com/author_name/project_urlname/"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "coverage",
+    "flake8",
+    "black",
+    "isort",
+    "pytest-cov",
+    "codecov",
+    "mypy",
+    "gitchangelog",
+    "mkdoc"
+]
+
+[project.scripts]
+project_name = "project_name.__main__:main"
+
+
+[tool.setuptools.packages.find]
+exclude = ["tests", ".github", ]
