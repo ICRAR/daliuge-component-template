@@ -67,9 +67,10 @@ This will only work after releasing the project to PyPi.
 docker exec -t daliuge-engine bash -c 'pip install --prefix=$DLG_ROOT/code project_name'
 ```
 ## Usage
-For example the MyComponent component will be available to the engine when you specify 
+For example the my_func function will be available to the engine when you specify 
 ```
-project_name.apps.MyAppDROP
+project_name.pyfunc.my_func
 ```
-in the AppClass field of a Python Branch component. The EAGLE palette associated with these components are also generated and can be loaded directly into EAGLE. In that case all the fields are correctly populated for the respective components.
+
+If you use the dlg_paletteGen to create an EAGLE palette, it can also generated and can be loaded directly into EAGLE. In that case all the fields are correctly populated for the respective components.
 
