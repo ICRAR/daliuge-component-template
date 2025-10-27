@@ -4,6 +4,40 @@ Changelog
 
 (unreleased)
 ------------
+- Added palette generation step to CI workflow. [Andreas Wicenec]
+- Changed line-length from 79 to 90 in Makefile. [Andreas Wicenec]
+- Modified palette generation. [Andreas Wicenec]
+- Add write permissions to rename_project. [Ryan Bunney]
+
+  Allow for repositories that are not made in the ICRAR organisation to run the workflow.
+- Stringify python version and remove macos. [Ryan Bunney]
+- Update checkout@v4 versions. [Ryan Bunney]
+- Merge pull request #2 from ICRAR/2025_AddPyFuncTemplate. [Ryan Bunney]
+
+  Fix missing `project_name` in `setup.py`
+- 2025_AddPyFuncTemplate: Fix pip install issue in setup.py and update
+  rename workflows. [Ryan Bunney]
+- Merge branch '2025_AddPyFuncTemplate' of
+  https://github.com/ICRAR/daliuge-component-template into
+  2025_AddPyFuncTemplate. [Ryan Bunney]
+- Update 'src/' to project_name' [Ryan Bunney]
+- Merge pull request #1 from ICRAR/2025_AddPyFuncTemplate. [Ryan Bunney]
+
+  2025_AddPyFuncTemplate: Add example pyfuncs.py file and update template.
+- Update README.md. [Ryan Bunney, sourcery-ai[bot]]
+- 2025_AddPyFuncTemplate: Add example pyfuncs.py file and update
+  template. [Ryan Bunney]
+
+  - Update structure to match DALiuGE
+  - Add dlg_paletteGen and make palette option
+  - Add test_pyfuncs.py
+- Update README.md. [awicenec]
+- Fix typo in url. [Markus Dolensky]
+
+
+v0.1.5 (2021-12-17)
+-------------------
+- Release: version v0.1.5 🚀 [Andreas Wicenec]
 - Updated README and ABOUT docs. [Andreas Wicenec]
 
 
