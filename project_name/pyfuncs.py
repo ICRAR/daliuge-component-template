@@ -10,6 +10,7 @@ then result in a single EAGLE palette.
 Be creative! do whatever you need to do!
 """
 
+
 def my_example_multiplier(x: int = 1, y: int = 2, n: int = 3):
     """
     My custom multiplier function.
@@ -25,4 +26,4 @@ def my_example_multiplier(x: int = 1, y: int = 2, n: int = 3):
     The multiple of  n * (x * y)
     """
 
-    return x*y*n
+    return x * y * n

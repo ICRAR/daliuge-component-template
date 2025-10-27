@@ -9,18 +9,16 @@ then result in a single EAGLE palette.
 
 Be creative! do whatever you need to do!
 """
+
 import logging
 
 from dlg.apps.app_base import BarrierAppDROP
-from dlg.meta import (
+from dlg.meta import (  # dlg_bool_param,; dlg_int_param,; dlg_string_param,
     dlg_batch_input,
     dlg_batch_output,
-    dlg_bool_param,
     dlg_component,
     dlg_float_param,
-    dlg_int_param,
     dlg_streaming_input,
-    dlg_string_param,
 )
 
 logger = logging.getLogger(__name__)

@@ -1,7 +1,7 @@
 import pytest
 
 from project_name.apps import MyAppDROP
-from project_name.data import  MyDataDROP
+from project_name.data import MyDataDROP
 
 given = pytest.mark.parametrize
 
@@ -16,5 +16,3 @@ def test_myData_class():
 
 def test_myData_dataURL():
     assert MyDataDROP("a", "a").dataURL == "Hello from the dataURL method"
-
-

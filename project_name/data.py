@@ -9,22 +9,26 @@ then result in a single EAGLE palette.
 
 Be creative! do whatever you need to do!
 """
-import base64
+
 import logging
-import os
-import pickle
 
 from dlg.drop import AbstractDROP
-from dlg.meta import (
-    dlg_batch_input,
-    dlg_batch_output,
-    dlg_bool_param,
-    dlg_component,
-    dlg_float_param,
-    dlg_int_param,
-    dlg_streaming_input,
-    dlg_string_param,
-)
+
+# Most of the time the following imports are needed for data components.
+# import base64
+# import os
+# import pickle
+
+# from dlg.meta import (
+#     dlg_batch_input,
+#     dlg_batch_output,
+#     dlg_bool_param,
+#     dlg_component,
+#     dlg_float_param,
+#     dlg_int_param,
+#     dlg_streaming_input,
+#     dlg_string_param,
+# )
 
 logger = logging.getLogger(__name__)
 
@@ -64,4 +68,4 @@ class MyDataDROP(AbstractDROP):
 
     @property
     def dataURL(self):
-        return f"Hello from the dataURL method"
+        return "Hello from the dataURL method"
