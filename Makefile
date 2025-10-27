@@ -116,7 +116,6 @@ palette: ## Make a palette for project_name
 	@echo "Using dlg_paletteGen to produce a palette..."
 	@dlg_paletteGen project_name -rs daliuge/palettes/project_name.palette
 	@echo "Palette 'project_name.palette' generated."
-	@rm output.xml
 
 .PHONY: init
 init:             ## Initialize the project based on an application template.
